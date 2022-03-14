@@ -1,0 +1,323 @@
+ETHICAL HACKING
+
+PRACTICAL 1 WhoIs Reconnaissance.
+
+Aim: Use Google and Whois for Reconnaissance.
+
+Theory: 
+
+1. WHOIS Search, Domain Name, Website, and IP Tool.
+
+2. Search the whois database, look up domain and IP owner information, and check out dozens of other statistics.
+
+3. Get all the data you need about a domain and everything associated with that domain anytime with a single search.
+
+Steps:
+
+1.click on https://whois.domaintools.com/ .
+
+2.Search for any website names and checkout the information given by WHOIS.
+
+3.Read carefully and understand it.
+
+--------X--------X-------X-------
+
+PRACTICAL 2 Cryptool
+
+Aim -Use CrypTool for encryption and decryption of strings in various algorithms.
+
+Thoery : 
+
+CrypTool is an open-source project that focuses on the free e-learning software CrypTool illustrating cryptographic and cryptanalytic concepts. According to "Hakin9", CrypTool is worldwide the most widespread e-learning software in the field 
+of cryptology.
+CrypTool implements more than 400 algorithms. Users can adjust these with own parameters. To introduce users to the field of cryptography, the organization created multiple graphical 
+interface software containing an online documentation, analytic tools and algorithms. They contain most classical ciphers, as 
+well as modern symmetric and asymmetric cryptography including RSA, ECC, digital signatures, hybrid encryption, homomorphic encryption, and Diffie?Hellman key exchange. 
+Methods from the area of quantum cryptography (like BB84 key 
+exchange protocol) and the area of post-quantum cryptography 
+(like McEliece, WOTS, Merkle-Signature-Scheme, XMSS, 
+XMSS_MT, and SPHINCS) are implemented. In addition to the 
+algorithms, solvers (analyzers) are included, especially for 
+classical ciphers. Other methods (for instance Huffman code, 
+AES, Keccak, MSS) are visualized. 
+In addition it contains: didactical games (like Number Shark, 
+Divider Game, or Zudo-Ku) and interactive tutorials about primes, elementary number theory, and lattice-based 
+cryptography. 
+
+Steps : 
+
+1. Install CrypTool . 
+
+2.Open this tool and create txt file and type input or plain text. 
+
+3.click on Encrypt/Decrypt then click specific cipher algorithm and enter key values for performing that specified algorithm. 
+
+4.Press on encrypt button and it will display encrypted plain text. 
+
+5.Now if want to decrypt it do the same process as done for encryption.
+
+--------X--------X-------X-------
+
+PRACTICAL 3 Networking Commands
+
+Aim: Use the commands ipconfig, ping, netstat and traceroute to analyze their outputs.
+
+Execute the following set of queries/commands
+
+Theory:-
+
+1. ifconfig:
+ internet protocol configuration 
+Displays all current TCP/IP network configuration values and refreshes Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS) settings. Used without parameters, ipconfig displays Internet Protocol version 4 (IPv4) and IPv6 
+addresses, subnet mask, and default gateway for all adapters.
+
+Command:-
+ifconfig (Linux)
+ipconfig (Windows)
+
+2.Ping: 
+Ping is a computer network administration software utility used to test the reachability of a host on an Internet Protocol network. 
+It is available for virtually all operating systems that have networking capability, including most embedded network administration software.
+
+Command:-
+ping 8.8.8.8
+
+3.Netstat: 
+The network statistics ( netstat ) command is a networking tool 
+used for troubleshooting and configuration, that can also serve 
+as a monitoring tool for connections over the network. Both 
+incoming and outgoing connections, routing tables, port listening, 
+and usage statistics are common uses for this command.
+
+Command:-
+netstat
+
+4.Traceroute: 
+Traceroute is a network diagnostic tool used to 
+track in real-time the pathway taken by a packet on an IP 
+network from source to destination, reporting the IP addresses 
+of all the routers it pinged in between. Traceroute also records 
+the time taken for each hop the packet makes during its route to 
+the destination.
+
+Command:-
+traceroute/
+tracert 8.8.8.8 (Google)
+tracert fb.com
+
+--------X--------X-------X-------
+
+PRACTICAL 4
+
+Aim:- Use NMap scanner to perform scanning on ports of various websites.
+
+Theory/Output :
+
+ACK 
+
+It never determines open (or even open|filtered)ports.It is used 
+to map out firewall rulesets,determining whether they are 
+stateful or not and which ports are filtered.
+
+Command - 
+nmap -sA -T4 scanme.nmap.org
+
+SYN :-
+SYN scan is the default and most popular scan option for good 
+reason. It can be performed quickly, scanning thousands of 
+ports per second on a fast network not hampered by intrusive 
+firewalls. SYN scan is relatively unobtrusive and stealthy, since it 
+never completes TCP connections.
+
+Command :-
+nmap -p 22,113,139 scanme.nmap.org
+
+NULL :-
+Does not set any bits (TCP flag header is 0)
+Command :-
+nmap -sN -p 22 scanme.nmap.org
+
+--------X--------X-------X-------
+
+PRACTICAL 5 Wireshark TooL
+
+Aim:-Use Wireshark tool to perform data packet sniffing on your network.
+
+Theory:- Wireshark is the world's leading network traffic analyzer, and an essential tool for any security professional or systems administrator. This free software lets you analyze 
+network traffic in real time, and is often the best tool for 
+troubleshooting issues on your network.
+
+Steps: 
+1) Open the Wireshark.
+2) connect to WIFI.
+3) see the analysis of the time, source, destination, protocol, 
+length and info.
+4) Then after that write the ip address of your WIFI in filter 
+ip, clk enter and then see the devices ip address connected to ur 
+WIFI.
+5) After that go to Google and search any site and surf on the 
+same page for 1-2 second and then come back to Wireshark and 
+check in the down table that the name is visible or not.
+
+Command Example:-
+
+ip.src==192.168.1.2
+
+--------X--------X-------X-------
+
+PRACTICAL 6 Network Shell (netsh)
+
+Aim- Password detection network shell.
+
+Theory:-
+
+1.netsh is a command-line scripting utility that allows you to 
+display or modify the network configuration of a computer that is 
+currently running.
+2. Type in the following command in Command Prompt and press the Enter key:
+
+Command:-
+netsh wlan show profiles
+
+3. All the Wi-Fi networks you?ve accessed in the past will appear.
+4. To find a password for one of the profiles listed enter in:
+
+Command:-
+netsh wlan show profile name=profilename key=clear
+
+For example, we want to see further details about CloudBT-
+Guest. You would enter in?
+
+Command:-
+netsh wlan show profile name=CloudBT-Guest key=clear
+
+Steps:-
+1.Open command prompt.
+2.Enter the command netsh wlan show profile in command 
+prompt.
+3.Enter the command 
+
+netsh wlan export profile folder=C:\
+key=clear and
+
+netsh wlan show profile name="your wifi name" 
+key=clear 
+
+in the command prompt.
+
+--------X--------X-------X-------
+
+PRACTICAL 7 Denial Of Service Attack using batch file
+
+Aim:-Execute a DOS attack using bat file and on your command prompt.
+
+Theory:-
+
+1.A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users.
+2.DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers acrash.
+3.In both instances, the DoS attack deprives legitimate users (i.e. 
+employees, members, or account holders) of the service or 
+resource they expected.
+
+Steps:-
+1.Open Notepad write following program.
+2.save with .bat extension and for save as type choose all the 
+files .
+3. run the bat file .
+
+batch file CODE:-
+
+index.bat
+:loop
+ping 192.168.1.112 -w 1 -n 1
+goto :loop
+
+Run the above code in CMD to perform DoS attack.
+
+--------X--------X-------X-------
+
+PRACTICAL 8 Keylogger Attack
+
+Aim : Create a simple keylogger using python.
+
+Theory :
+
+Keylogging is a method that was first imagined back in the year 1983.
+Keylogger is a software that records each and every keystroke you enter, including mouse clicks. Hardware keyloggers are also available which will be inserted between keyboard and CPU.
+
+It provides the following features:
+It takes a minute to install this software/hardware in the victim?s 
+system, from the next second onwards attacker will get every 
+activity going on in the victim computer.
+Each and every activity happening in the victim?s system with 
+screenshots will be recorded.
+This activity will be saved in the victim?s system or it can be 
+mailed to the attacker email or can be uploaded to the FTP 
+server.
+It works watchfully, escaped the client?s view, for example, the 
+focused on the client could never discover that all his keystrokes 
+are being recorded.
+Keyloggers recorder can record writings, email, and any 
+information you compose at whatever point using your support.
+
+HTML CODE:-
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="m-5">
+    <div class="container shadow rounded-lg p-3"
+        style="min-height: 75px; font-size: 25px; font-weight: bold; font-family: 'Times New Roman', Times, serif; overflow: auto;">
+        <div class="output"></div>
+    </div>
+    <div class="container mt-4">
+        <div class="alert alert-primary shadow" role="alert"
+            style="text-align: center; font-size: 25px; font-weight: bold; font-family: 'Times New Roman', Times, serif; width: fit-content; margin: 20px auto;">
+            Input Field
+        </div>
+        <div class="input-group mb-3" style="margin: auto; max-width: 400px;">
+            <input type="text" class="form-control shadow input-source rounded-pill" placeholder="Enter Data">
+        </div>
+    </div>
+    <div class="container mt-5" style="width: 175px; min-height: 200px;">
+        <div class="output-fade d-none border border-4 border-dark rounded-3 shadow-lg"
+            style="text-align: center; font-size: 85px; font-weight: bold; font-family: 'Times New Roman', Times, serif;">
+            A
+        </div>
+    </div>
+</body>
+<script>
+    $('.input-source').keyup(function () {
+        var value = this.value;
+        $('.output').append(value);
+        $('.input-source').val('');
+        $('.output-fade').html(value);
+        $('.output-fade').removeClass('d-none');
+        setTimeout(() => {
+            $('.output-fade').addClass('d-none');
+        }, 300);
+    });
+</script>
+
+</html>
+
+
+
+
+
+
